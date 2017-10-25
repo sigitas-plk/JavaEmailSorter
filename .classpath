@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="lib/jdom.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/drools-compiler-4.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/drools-core-4.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/drools-decisiontables-4.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/jxl-2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/antlr-runtime-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/core-3.2.3.v_686_R32x.jar"/>
+	<classpathentry kind="lib" path="lib/Drools/mvel14-1.2.21.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

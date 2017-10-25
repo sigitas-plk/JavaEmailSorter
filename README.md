@@ -1,0 +1,1 @@
+Java e-mail sorter based on IMAP protocol

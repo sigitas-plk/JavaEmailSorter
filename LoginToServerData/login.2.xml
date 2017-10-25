@@ -1,0 +1,7 @@
+<LoginData>
+	<UserName>email</UserName>
+	<Password>login</Password>
+	<MailServer>imap.gmail.com</MailServer>
+	<Port>993</Port>
+	<ConnectionType>Secure</ConnectionType>
+</LoginData>

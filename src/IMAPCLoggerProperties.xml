@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+
+  <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender"> 
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%5p %d{yyyy/MM/dd-HH:mm:ss:SSS} Class:%c Line:%L  => %m%n"/> 
+    </layout> 
+  </appender> 
+
+  <appender name="LT" class="org.apache.log4j.RollingFileAppender"> 
+    <param name="file" value="IMAPConnectorLT.log"/>
+    <param name="MaxFileSize" value="100KB"/>
+    <param name="MaxBackupIndex" value="1"/>
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%d{yyyy/MM/dd-HH:mm:ss:SSS} Class:%c Line:%L  => %m%n"/> 
+    </layout> 
+<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="WARN" />
+			<param name="LevelMax" value="WARN" />
+		</filter>
+  </appender> 
+<appender name="EN" class="org.apache.log4j.RollingFileAppender"> 
+    <param name="file" value="IMAPConnectorEN.log"/>
+    <param name="MaxFileSize" value="100KB"/>
+    <param name="MaxBackupIndex" value="1"/>
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%d{yyyy/MM/dd-HH:mm:ss:SSS} Class:%c Line:%L  => %m%n"/> 
+    </layout> 
+<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="INFO" />
+		</filter>
+  </appender> 
+
+<appender name="ERRORS" class="org.apache.log4j.RollingFileAppender"> 
+    <param name="file" value="IMAPConnectorERRORS.log"/>
+    <param name="MaxFileSize" value="100KB"/>
+    <param name="MaxBackupIndex" value="1"/>
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%d{yyyy/MM/dd-HH:mm:ss:SSS} Class:%c Line:%L  => %m%n"/> 
+    </layout> 
+<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="ERROR" />
+			<param name="LevelMax" value="ERROR" />
+		</filter>
+  </appender> 
+
+
+<appender name="EVENTS" class="org.apache.log4j.RollingFileAppender"> 
+    <param name="file" value="IMAPConnectorEVENTS.log"/>
+    <param name="MaxFileSize" value="300KB"/>
+    <param name="MaxBackupIndex" value="1"/>
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%d{yyyy/MM/dd-HH:mm:ss:SSS} Class:%c Line:%L  => %m%n"/> 
+    </layout> 
+<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="FATAL" />
+			<param name="LevelMax" value="FATAL" />
+		</filter>
+  </appender> 
+
+
+
+  <root> 
+    <priority value ="DEBUG" /> 
+    <appender-ref ref="CONSOLE" /> 
+    <appender-ref ref="LT" /> 
+    <appender-ref ref="EN" /> 
+    <appender-ref ref="ERRORS" /> 
+    <appender-ref ref="EVENTS" /> 
+  </root>
+</log4j:configuration>

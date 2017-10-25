@@ -1,0 +1,7 @@
+<LoginData>
+	<UserName>exo</UserName>
+	<Password>test</Password>
+	<MailServer>imap.com</MailServer>
+	<Port>143</Port>
+	<ConnectionType>Unsecured</ConnectionType>
+</LoginData>
